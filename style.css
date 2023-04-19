@@ -1,0 +1,41 @@
+.carousel-container {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+}
+.carousel-wrapper {
+  display: flex;
+  width: 2400px;
+  position: relative;
+  left: 0;
+  transition: left 0.5s ease-in-out;
+}
+.carousel-item {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+}
+.carousel-item:nth-child(1) {
+  left: 0;
+}
+.carousel-item:nth-child(2) {
+  left: 600px;
+}
+.carousel-item:nth-child(3) {
+  left: 1200px;
+}
+.carousel-item:nth-child(4) {
+  left: 1800px;
+}
+.carousel-navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.prev-button,
+.next-button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
